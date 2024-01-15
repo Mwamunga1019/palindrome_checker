@@ -1,0 +1,109 @@
+/* * {
+  border: 2px solid red;
+} */
+
+body {
+  background-color: rgb(9, 9, 32);
+  font-family: sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+span {
+  font-style: italic;
+}
+
+label {
+  color: black;
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 15px;
+}
+
+.input-cont {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  gap: 30px;
+  border-radius: 12px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 40%;
+}
+
+input[type="text"] {
+  border: 2px solid rgb(90, 10, 90);
+  border-radius: 12px;
+}
+
+hr {
+  border: 2px solid purple;
+  width: 90%;
+}
+
+button {
+  background-color: rgb(202, 37, 202);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.paragraph {
+  max-width: 500px;
+  text-align: center;
+  background-color: rgb(48, 233, 48);
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.paragraph p {
+  font-size: 20px;
+}
+
+#result {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (150px <= width <= 460px) {
+  .title h1 {
+    font-size: 18px;
+  }
+
+  #result {
+    font-size: 12px;
+  }
+
+  .paragraph p {
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  label {
+    font-size: 10px;
+  }
+}
